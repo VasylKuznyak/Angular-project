@@ -1,0 +1,53 @@
+.listOfGenres {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 225px;
+  font-family: var(--font);
+  padding: 87px 20px 0 0;
+}
+
+.darkTheme {
+  color: var(--lightText);
+}
+
+.lightTheme {
+  color: var(--darkText);
+}
+
+.listOfGenres_title {
+  font-size: 2.5em;
+  text-align: end;
+  color: var(--colorText);
+}
+
+.listOfGenres_reset {
+  margin: 1em auto 0 3em;
+  text-align: center;
+  font-size: 1.5em;
+  padding: .5em;
+  color: var(--colorText);
+  border: 1px dashed var(--colorText);
+}
+
+.listOfGenres_reset:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.listOfGenres_input {
+  text-align: end;
+}
+
+.listOfGenres_input input {
+  width: 190px;
+  box-shadow: 0 0 1em var(--darkBackground);
+  border: 1px solid var(--colorText);
+  margin-bottom: 1em;
+  padding: 5px;
+  font-family: var(--font);
+}
+
+.listOfGenres_input input:focus {
+  box-shadow: 0 0 1.8em var(--darkBackground);
+}

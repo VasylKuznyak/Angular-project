@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+:root {
+  --darkText: black;
+  --lightText: snow;
+  --darkBackground: #001f3f;
+  --lightBackground: #CADFF4;
+  --colorText: deepskyblue;
+  --font: 'Karla', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

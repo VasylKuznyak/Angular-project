@@ -1,0 +1,22 @@
+.listOfMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 82%;
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.moviesAndGenres {
+  display: flex;
+}
+
+.lightTheme {
+  transition-duration: .5s;
+  background-color: var(--lightBackground);
+}
+
+.darkTheme {
+  transition-duration: 1s;
+  background-color: var(--darkBackground);
+}

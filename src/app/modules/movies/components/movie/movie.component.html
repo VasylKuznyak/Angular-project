@@ -1,0 +1,21 @@
+<div
+  *ngIf="movie && movieDetails && imageEndPoint"
+  class="movieCard">
+  <div class="movieCard_hover">
+    <h2 class="movieCard_rating">{{movie.vote_average}}</h2>
+    <img
+      src="{{image}}"
+      draggable="false"
+      class="movieCard_image"
+      alt="{{movie.title}}" (click)="navigateToInfo()">
+  </div>
+  <div [ngClass]="isDarkTheme ? 'movieCard_genres_dark' : 'movieCard_genres_light'">
+    <app-star-rating></app-star-rating>
+    <h3 class="movieCard_title">{{movie.title}}</h3>
+    <div *ngIf="genres" class="movieCard_genres">
+      <p *ngFor="let genre of genres">
+        {{genre.name.toLowerCase()}}
+      </p>
+    </div>
+  </div>
+</div>

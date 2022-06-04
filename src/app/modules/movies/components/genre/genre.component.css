@@ -1,0 +1,17 @@
+.singleGenre {
+  font-size: 1.2em;
+  text-align: end;
+  padding: .2em 0;
+}
+
+.singleGenre:hover {
+  cursor: pointer;
+  transform: translate(-20px);
+}
+
+.singleGenre:active {
+  color: var(--lightText);
+  -webkit-text-stroke: 1px var(--colorText);
+  transform: scale(1.15);
+  margin-right: 20px;
+}

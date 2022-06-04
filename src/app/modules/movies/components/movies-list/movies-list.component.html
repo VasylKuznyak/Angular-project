@@ -1,0 +1,22 @@
+<section
+  *ngIf="movies"
+  [ngClass]="isDarkTheme ? 'darkTheme' : 'lightTheme'">
+  <router-outlet></router-outlet>
+
+  <div class="moviesAndGenres">
+    <div class="listOfMovies">
+      <app-movie
+        *ngFor="let movie of movies"
+        [movie]="movie"
+        [imageEndPoint]="movie.poster_path"
+        [isDarkTheme]="isDarkTheme">
+      </app-movie>
+    </div>
+
+    <div>
+      <app-genres-list></app-genres-list>
+    </div>
+  </div>
+</section>
+
+
